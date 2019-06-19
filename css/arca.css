@@ -110,9 +110,6 @@ body{
 	margin-top: -120px;
 	background-color: rgb(245,245,245);
 }
-.r{
-transform: rotate(1deg);
-}
 .arca-bayangan{
 	box-shadow: 2px 2px 45px rgb(0,0,0,0.6);
 	margin-top: -220px;
@@ -168,6 +165,9 @@ transform: rotate(1deg);
 			border-radius: 10px;
 			/*margin-left: auto;
 			margin-right: auto;*/
+		}
+		#work{
+			margin-top:60px;
 		}
 		.jumbotron{
 			min-height: 400px;
