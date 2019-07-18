@@ -1,28 +1,35 @@
 
 body{
-	font-family: sans-serif !important;
+	font-family: 'Quicksand', sans-serif !important;
+	overflow-x: hidden;
 }
 .navbar{
 	background:transparent !important;
 }
 .g{
 	margin-top: none !important;
+	/*position: relative;*/
+	min-height: 400px;
 }
 .jumbotron{
 /*	background-image:-moz-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
 	background-image:-webkit-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
 	background-image:-o-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
 	background-image:-ms-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);*/
-	background-image:-moz-linear-gradient(135deg,#ffc107,rgb(89,1,255,0.7)),url(../img/hero-bg.jpg);
-	background-image:-ms-linear-gradient(135deg,#ffc107,rgb(89,1,255,0.7)),url(../img/hero-bg.jpg);
-	background-image:-o-linear-gradient(135deg,#ffc107,rgb(89,1,255,0.7)),url(../img/hero-bg.jpg);
-	background-image:-webkit-linear-gradient(135deg,#ffc107,rgb(89,1,255,0.7)),url(../img/hero-bg.jpg);
-	min-height: 600px;
-	background-size: 100%;
+background-image:-moz-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
+	background-image:-webkit-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
+	background-image:-o-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
+	background-image:-ms-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
+	background-image:linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
+	background-size: cover;
 	position: relative;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
+	border-bottom-right-radius: 140px;
+	border-bottom-left-radius: 140px;
 	background-attachment:fixed;
+	background-repeat: no-repeat;
+
 
 }
 @-moz-keyframes img{
@@ -45,7 +52,7 @@ body{
 	}
 }
 @-webkit-keyframes img{
-		0%{
+	0%{
 		transition: 1s;
 		transform: rotate(1deg);
 	}
@@ -64,7 +71,7 @@ body{
 	}
 }
 @-o-keyframes img{
-		0%{
+	0%{
 		transition: 1s;
 		transform: rotate(1deg);
 	}
@@ -82,13 +89,9 @@ body{
 		transform:rotate(0deg);
 	}
 }
-#navbarNav{
-	background:transparent;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 .new{
-	background:linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)) !important;
+	background:rgb(0,0,227,0.8)!important;
 	box-shadow: 2px 2px 5px rgb(0,0,0,0.4);
 	height: 80px;
 }
@@ -107,7 +110,7 @@ footer{
 	background-image:-webkit-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
 	background-image:-o-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
 	background-image:-ms-linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
-	background-image:linear-gradient(135deg,rgb(24,194,230),rgb(0,0,227,0.8)),url(../img/hero-bg.jpg);
+	background-image:linear-gradient(135deg,rgb(24,194,230,0.1),rgb(0,0,227,0.3)),url(../img/hero-bg.jpg);
 	background-size: 100%;
 	padding:150px;
 	color: white;
@@ -119,9 +122,16 @@ footer{
 	background-color: rgb(245,245,245);
 }
 .arca-bayangan{
-	box-shadow: 2px 2px 45px rgb(0,0,0,0.6);
-	margin-top: -220px;
+	box-shadow: 2px 2px 15px rgb(0,0,0,0.3);
+	/*margin-top: -300px;*/
 	min-height: 300px;
+	/*background-color: #343a40;*/
+}
+.arca-bayangan5{
+	box-shadow: 2px 2px 45px rgb(0,0,0,0.4);
+	/*margin-top: -300px;*/
+	min-height: 300px;
+
 }
 .arca-bayangan1{
 	-moz-box-shadow: 2px 2px 45px rgb(0,0,0,0.6);
@@ -136,7 +146,7 @@ footer{
 	-ms-box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
 	-o-box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
 	box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
-	}
+}
 .img{
 	height: 200px;
 	width: 200px;
@@ -185,6 +195,17 @@ footer{
 	}*/
 
 	@media (min-width: 992px) { 
+		.k{
+			margin-bottom: 30px;
+		}
+		#navbarNav{
+			background:transparent;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.jumbotron{
+			height: 100vh;
+		}
 		.prodak{
 			margin-top: 520px;
 		}
@@ -198,37 +219,55 @@ footer{
 
 	}
 	@media(max-width: 576px){
+		.k{
+			margin-bottom:10px;
+		}
+		#baru{
+			margin-top:4px;
+		}
 		#navbarNav{
-			background-color:orange;
-			color: blue;
-			border-radius: 10px;
+			background-color: #ffc107;
+			box-shadow:2px 2px 23px rgb(0,0,0,0.7);
+			border-radius: 5px;
 			/*margin-left: auto;
 			margin-right: auto;*/
+		}
+		.arca-bayangan5{
+			box-shadow: 2px 2px 45px rgb(0,0,0,0.6);
+			/*margin-top: -300px;*/
+			height: 400px;
+			overflow: hidden;
+			overflow-y:scroll;
 		}
 		#work{
 			margin-top:60px;
 		}
+		.bg-whitee{
+			margin-top:200px;
+		}
+		.about .btn-warning{
+			margin-top: 70px 
+			margin-bottom:10px;
+		}
 		.jumbotron{
-			min-height: 400px;
+			height: 100vh;
 		}
-		.arca-bayangan{
-			margin-top:0;
-		}
-		.u{
+		./*u{
 			margin-top: -120px !important;
-		}
-		.arca-bayangan1{
-			transform: scale(1);
-		}
-		.btn-lg{
-			margin-top:10px;
-		}
-		.about{
-			padding:30px;
-			display: none;
-		}
-		.t{
-			margin-top: 40px;
-		}
+			}*/
+			.arca-bayangan1{
+				transform: scale(1);
+				margin-top: -200px;
+			}
+			.btn-lg{
+				margin-top:10px;
+			}
+			.about{
+				padding:5px;
+				/*display: none;*/
+			}
+			.t{
+				margin-top: 40px;
+			}
 
-	}
+		}
